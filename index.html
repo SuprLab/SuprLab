@@ -83,6 +83,40 @@
                 display: block;
             }
         }
+        .section {
+            margin: 30px 0;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .section h2 {
+            color: #89b4fa;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .section h3 {
+            color: #a6adc8;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .code-block {
+            background-color: #1e1e2e;
+            border: 1px solid #313244;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+            overflow-x: auto;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .code-block code {
+            color: #cdd6f4;
+            font-family: mononoki;
+            text-align: left;
+        }
+        .comment {
+            color: gray
+        }
     </style>
 </head>
 <body>
@@ -95,9 +129,27 @@
 |__   | | | . |  _|  |__| .'| . |
 |_____|___|  _|_| |_____|__,|___|
           |_|                    
+
+The ultimate portable lab
 	</pre>
     </div>
-    <i><a href='https://github.com/SuprLab' target='_blank'>→ View on GitHub</a></i>
+    <i><a href='https://github.com/SuprLab/SuprLab' target='_blank'>→ View on GitHub</a></i>
+    <div class="section">
+        
+        <h3>1. Requirements</h3>
+        <p><a href='https://nix.dev/install-nix' target='_blank'>Nix</a></p>
+        
+        <h3>2. Try it</h3>
+        <div class="code-block">
+            <code>nix develop github:suprlab/suprlab</code>
+            <p class="comment">Or if flakes are not enabled:</p>
+            <code>nix --extra-experimental-features "nix-command flakes" develop github:suprlab/suprlab</code>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div style="margin-top: 40px;">
 </div>
 </body>
 </html>
