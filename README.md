@@ -1,5 +1,5 @@
 # SuprLab
-The ultimate portable lab
+The ultimate portable lab (!WIP)
 
 ## Quick Start
 #### Requirements
